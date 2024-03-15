@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d5ae68;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    height: 15rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#result.pl {
+    background-color: #8bc34a;
+    color: #fff;
+}
+
+#result.not-pl {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.img {
+    position: absolute;
+    top: 1px;
+    height: 5rem;
+    border-radius: 20px;
+}
+
+.copy {
+    position: absolute;
+    bottom: 15px;
+    margin: 0 5rem; /* Adjusted margin */
+    padding: 10px; /* Added padding */
+    color: red;
+    font-weight: 400;
+    /* border: 1px solid rgb(243, 4, 4); */
+    border-radius: 15px; /* Added border-radius */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: -40;
+        width: 90%; /* Adjusted width for smaller screens */
+        margin-left:-1rem;
+        width: 15rem;
+    }
+
+    .copy {
+        margin: 0 1rem; 
+        position: absolute;/* Adjusted margin for smaller screens */
+        bottom: 0;
+        opacity: 1;
+        z-index: 1;
+        overflow: hidden;
+    }
+}
+
+
+.heading{
+    font-size: 20px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 0;
+    font-style: italic;
+}
+
+.copy{
+    position: absolute;
+    z-index: -1;
+    display: block;
+}
+
+.heading{
+    position:absolute;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.heading>h1{
+    color: white;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(166, 255, 33);
+    padding: 25px;
+    border-radius: 0px 0px 60px 0px;
+    
+}
